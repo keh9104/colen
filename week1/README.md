@@ -16,5 +16,4 @@
 프로퍼티와 메소드의 집합인 DOM API이다.
 
 간단히 말하면 DOM은 html문서에 접근하기 위한 일종의 인터페이스(오작교)이다.   
-
-<img src="./dom.jpg" width="450px" height="300px"></img><br/>
+<img src="https://media.vlpt.us/images/kkm8314/post/de17c669-e3a6-41f8-90c0-cb1d9a9ab0dd/image.png" width="450px"></img><br/>
