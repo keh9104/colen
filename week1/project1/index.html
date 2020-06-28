@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>돼지 게임!</title>
+    <!-- 아이콘 -->
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <!-- 1번 플레이어 -->
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">플레이어 1</div>
+        <div class="player-score" id="score-0">11</div>
+        <div class="player-current-box">
+          <div class="player-current-label">이번 라운드 점수</div>
+          <div class="player-current-score" id="current-0">11</div>
+        </div>
+      </div>
+      <!-- 2번 플레이어 -->
+      <div class="player-1-panel active">
+        <div class="player-name" id="name-1">플레이어 2</div>
+        <div class="player-score" id="score-1">11</div>
+        <div class="player-current-box">
+          <div class="player-current-label">이번 라운드 점수</div>
+          <div class="player-current-score" id="current-1">11</div>
+        </div>
+      </div>
+      <!-- 버튼 -->
+      <button class="btn-new">
+        <i class="ion-ios-plus-outline"></i>새로 시작하기
+      </button>
+      <button class="btn-roll">
+        <i class="ion-ios-loop"></i>주사위 굴리기
+      </button>
+      <button class="btn-hold">
+        <i class="ion-ios-download-outline"></i>점수 저장하기
+      </button>
+
+      <!-- 승리 점수 -->
+      <input type="number" id="winningScore" placeholder="승리 점수 입력" />
+      <!-- 주사위 -->
+      <img src="./images/dice-1.png" alt="Dice" class="dice" id="dice1" />
+      <img src="./images/dice-1.png" alt="Dice" class="dice" id="dice2" />
+    </div>
+    <script src="./dice.js"></script>
+  </body>
+</html>
