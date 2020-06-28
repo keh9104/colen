@@ -15,5 +15,14 @@
 메모리 상에 존재하는 DOM을 변경해야 하고, 이때 필요한 것이 DOM에 접근하고 변경하는    
 프로퍼티와 메소드의 집합인 DOM API이다.
 
-간단히 말하면 DOM은 html문서에 접근하기 위한 일종의 인터페이스(오작교)이다.   
+간단히 말하면 DOM은 html문서에 접근하기 위한 일종의 인터페이스(오작교)이다.    
+    
 <img src="https://media.vlpt.us/images/kkm8314/post/de17c669-e3a6-41f8-90c0-cb1d9a9ab0dd/image.png" width="450px"></img><br/>
+   
+   
+DOM에서 모든 요소, 속성, 텍스트는 하나의 객체이면 document 객체의 자식이다.   
+DOM tree의 진입점은 document객체이며 최종점은 텍스트이다.   
+(document로 들어간 후 차례 차례로 내려가다 마지막에 텍스트가 있다)
+   
+------------
+## HTML node 구조
