@@ -9,7 +9,7 @@
 => html을 자바스크립트가 이해할 수 있는 개체로 만드는 거
 
 모든 요소(element)와 속성(atritbute), 텍스트를 각각의 자바스크립트 객체(objet)로 만들고   
-이것들을 상하 포함관계가 있는 트리 구조화 한 것을 DOM Tree 구조라고 한다.   
+이것들을 상하 포함관계가 있는 트리 구조로 구조화 한 것을 DOM Tree 구조라고 한다.   
 
 이 DOM은 자바스크립트를 통해 동적으로 변경할 수 있으며 변경된 DOM은 렌더링에 반영된다.   
 따라서 정적인 웹 페이지에 접근하여 동적으로 웹페이지를 변경하기 위해선   
@@ -21,7 +21,7 @@
 <img src="https://media.vlpt.us/images/kkm8314/post/de17c669-e3a6-41f8-90c0-cb1d9a9ab0dd/image.png" width="450px"></img><br/>
    
    
-DOM에서 모든 요소, 속성, 텍스트는 하나의 객체이면 document 객체의 자식이다.   
+DOM에서 모든 요소, 속성, 텍스트는 하나의 객체이면서 document 객체의 자식이다.   
 DOM tree의 진입점은 document객체이며 최종점은 텍스트이다.   
 (document로 들어간 후 차례 차례로 내려가다 마지막에 텍스트가 있다)
    
