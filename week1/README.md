@@ -31,6 +31,8 @@ DOM tree의 진입점은 document객체이며 최종점은 텍스트이다.
 html DOM은 노드라고 불리는 계층적 단위에 정보를 저장하고 있다.    
 = 노드는 html DOM을 구성하는 계층적 단위이다.   
 = 노드는 단위이다.
+<br/>
+<br/>
 <img src="http://www.tcpschool.com/lectures/img_js_htmldom.png" width="450px"></img><br/>
 
 html문서의 정보는 노드 트리라고 불리는 계층적 구조에 저장된다.
