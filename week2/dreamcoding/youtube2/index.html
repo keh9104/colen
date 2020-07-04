@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="./main.js"></script> 
+    이런 식으로 헤드 태그 안에 넣으면 html이 다 읽히기 전에 자바스크립트를 먼저 읽고 실행하고
+    나머지 html을 읽어 들인다. 
+    사용자가 눈에 당장 보이는 것들이 늦게 로딩이 되기 때문에 답답하게 느낄 수 있다. 
+
+    parsing HTML -> fetching js -> executing js -> parsing HTML -> page is ready          -->
+
+    <!-- <script async src="./main.js"></script>
+
+    헤드 태그에 넣고 속성값을 async 줬을 때
+
+    패칭과 파싱이 동시(병렬적으로)에 일어나기 때문에 속도가 조금 빠를 수 있다
+    하지만 html이 파싱되기 전에 자바스크립트가 실행되기 때문에 좋지 않다. 
+    (DOM이 준비 되기 전에 자바스크립트로 DOM API를 활용할 때 )
+    여러 개의 자바스크립트를 사용하고 그것들의 실행 순서가 중요한 경우
+    async는 적합하지 않다. 왜냐면 선언한 순서에 상관 없이 설치가 빨리 끝난
+    자바스크립트를 먼저 실행하기 때문이다.
+    
+    parsing HTML -> blocked    ->   parsing HTML
+    fetching js -> excuting js                                                           -->
+
+    <!-- <script defer src="./main.js"></script>
+    헤드 태그에 넣고 defer 속성 값 줬을 때
+
+    패칭과 파싱이 동시에 일어나고 패칭이 다 끝나면 파싱이 끝날 때까지 기다렸다가
+    자바스크립트가 실행된다
+    async와는 다르게 자바스크립트가 여러개 사용되더라도 파싱도 다 끝나고 모든 자바스크립트가
+    다 설치가 된 후에, 선언된 순서로 실행되기 때문에 안전하고 가장 효율적이다
+
+    parsing HTML  -> excuting js
+    fetching js                                                                          -->
+  </head>
+  <body>
+    <div></div>
+    <!-- <script src="./main.js"></script> 
+    이런 식으로 바디 가장 아래에 넣으면 html이 다 읽히고 화면에 보인 다음에 
+    자바스크립트가 읽히기 때문에 사용자 입장에서는 속도가 빠르다고 느낄 수 있다
+    하지만 만약 html요소가 적고 자바스크립트에 많이 의존되어있는 경우엔
+    자바스크립트와 관련된 요소를 보기까지 시간이 오래 걸릴 수 있다는 단점이 있다.
+
+    parsing HTML -> (page is ready) -> fetching js -> excuting js                         -->
+  </body>
+</html>
