@@ -104,31 +104,32 @@ function Person(){   <br>
     this.job = "학생";   <br>
     this.major = "베트남학과";   <br>
 }   <br>
-   
-let hong = new Person();    <br> 
-let kim = new Person();    <br> 
-이런 식으로 객체를 여러번 만들면 각각의 객체 안의 변수가 모두 메모리에 할당되니까 즇지 않다  <br>
-(객체 100개 만들면 변수는 200개가 다 메모리에 할당된다)  <br>
+
+let hong = new Person(); <br>
+let kim = new Person(); <br>
+이런 식으로 객체를 여러번 만들면 각각의 객체 안의 변수가 모두 메모리에 할당되니까 즇지 않다 <br>
+(객체 100개 만들면 변수는 200개가 다 메모리에 할당된다) <br>
 <br>
-프로토타입을 사용하면?  <br>
-function Person(){};   <br>
-   
-Person.prototype.job = "학생";   <br>
-Person.prototype.major = "베트남학과";   <br>
-   
-let hong = new Person();   <br>
-let kim = new Person();   <br>
+프로토타입을 사용하면? <br>
+function Person(){}; <br>
+
+Person.prototype.job = "학생"; <br>
+Person.prototype.major = "베트남학과"; <br>
+
+let hong = new Person(); <br>
+let kim = new Person(); <br>
 <br>
-console.log(hong); //Person{}  <br>
-hong, kim이라는 객체 안에는 아무런 변수가 없다  <br>
-console.log(hong.job); // 학생  <br>
-하지만 프로토타입 객체에 있는 변수에 접근이 가능하다  <br>
-<br>
-<br>
-결론: 여러 객체에서 공통적으로 사용되는 변수들은 프로토타입 객체에 넣어서 메모리를 아끼자.  <br>
+console.log(hong); //Person{} <br>
+hong, kim이라는 객체 안에는 아무런 변수가 없다 <br>
+console.log(hong.job); // 학생 <br>
+하지만 프로토타입 객체에 있는 변수에 접근이 가능하다 <br>
 <br>
 <br>
--------------------------------------------
+결론: 여러 객체에서 공통적으로 사용되는 변수들은 프로토타입 객체에 넣어서 메모리를 아끼자. <br>
+<br>
+<br>
+
+---
 
 ## promise, await, async
 
