@@ -1,0 +1,35 @@
+#autocomplete-container {
+  width: 300px;
+  margin: 50px auto;
+  width: 100%;
+  padding: 20px 15px;
+  outline: none;
+  font-size: 20px;
+}
+
+#autocomplete-results {
+  display: none;
+  width: 165px;
+  margin: 0;
+  padding: 0 0 0.5rem 0.5rem;
+  box-sizing: border-box;
+}
+
+#autocomplete-results li {
+  font-size: 1rem;
+  list-style: none;
+  width: 100%;
+}
+
+#autocomplete-results li:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+#countryList {
+  display: flex;
+  flex-direction: column;
+}
+.highlight {
+  order: -1;
+  background-color: yellow;
+}
